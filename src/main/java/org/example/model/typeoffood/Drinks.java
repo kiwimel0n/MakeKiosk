@@ -1,4 +1,4 @@
-package org.example.model.typeOfFood;
+package org.example.model.typeoffood;
 
 import org.example.model.Product;
 

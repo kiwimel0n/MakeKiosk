@@ -3,10 +3,10 @@ package org.example.view;
 import org.example.model.Menu;
 import org.example.model.Order;
 import org.example.model.Product;
-import org.example.model.typeOfFood.Burgers;
-import org.example.model.typeOfFood.Chickens;
-import org.example.model.typeOfFood.Drinks;
-import org.example.model.typeOfFood.SideAndSnack;
+import org.example.model.typeoffood.Burgers;
+import org.example.model.typeoffood.Chickens;
+import org.example.model.typeoffood.Drinks;
+import org.example.model.typeoffood.SideAndSnack;
 
 
 import java.util.LinkedList;
@@ -42,7 +42,7 @@ public class OutputKiosk {
         System.out.println("\n" + "    올바른 음식을 통해 건강, 행복, 즐거운 미래를 만들어가는");
         System.out.println("              맘스터치에 오신것을 환영합니다.");
     }
-
+    
     //메인 메뉴화면 출력
     public void displayMainMenu() {
         welcomeMessage();
@@ -115,7 +115,6 @@ public class OutputKiosk {
                 Order.addPurchase = new LinkedList<>(Drinks.DrinkList);
                 welcomeMessage();
                 System.out.println("\n" + "아래 상품 메뉴판을 보시고 상품을 골라 입력해주세요.");
-                ;
                 System.out.println(" [ Drinks MENU ] ");
                 System.out.println();
                 for (int dList = 0; dList < Drinks.DrinkList.size(); dList++) {

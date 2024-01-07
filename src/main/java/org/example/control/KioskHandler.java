@@ -6,11 +6,11 @@ import org.example.view.OutputKiosk;
 
 import java.util.Scanner;
 
-public class Operation1 {
+public class KioskHandler {
 
 
     //장바구니 구매확정
-    public void Collect(){
+    public void addToCart(){
         orderList.add(addCart1);
         System.out.printf("%s 가 장바구니에 추가되었습니다.", addCart1.getMenuName());
         kioskProcess();
@@ -27,7 +27,7 @@ public class Operation1 {
         OutputKiosk kiosk = new OutputKiosk();
         Scanner Scanner = new Scanner(System.in);
         if (menuCheck == 1) {
-            Collect();
+            addToCart();
         } else if (menuCheck == 2) {
             menuSelectCancel(menuIdx);
         } else {
